@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <!-- Link external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1 id="main-heading">Welcome to Chandra Deepika's Page</h1>
+    <p id="intro-text">This is a styled paragraph. Click the button to see something cool!</p>
+
+    <!-- Button with ID for JavaScript access -->
+    <button id="action-btn">Click Me!</button>
+  </main>
+
+  <!-- JavaScript for behavior -->
+  <script>
+    // Log when the page loads
+    console.log("Page has successfully loaded!");
+
+    // Add click event listener to the button
+    document.getElementById('action-btn').addEventListener('click', function () {
+      // Change heading text and style
+      const heading = document.getElementById('main-heading');
+      heading.textContent = "Thanks for Clicking!";
+      heading.style.color = "green";
+
+      // Update paragraph
+      const para = document.getElementById('intro-text');
+      para.textContent = "You just triggered a JavaScript function!";
+      para.style.fontStyle = "italic";
+
+      // Log to console
+      console.log("Button clicked and content updated!");
+    });
+  </script>
+</body>
+</html>

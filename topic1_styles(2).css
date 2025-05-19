@@ -1,0 +1,37 @@
+/* Reset default margin */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Styling the main heading */
+#main-heading {
+  color: darkblue;
+  font-size: 2.5em;
+}
+
+/* Styling the paragraph */
+#intro-text {
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* Button styling */
+#action-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#action-btn:hover {
+  background-color: dodgerblue;
+}
